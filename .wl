@@ -201,10 +201,8 @@ wl-message-sort-field-list    '("^From:" "^To:" "^Cc:" "^Date:" "^Message-ID:" "
 (setq wl-summary-width nil)
 
 ;;スレッド表示をデフォルトでしない
-;(setq wl-summary-default-view 'sequence)
-
-;;スレッド表示するときはスレッドを開いた状態で表示
-(setq wl-thread-insert-opened t)
+(setq wl-summary-default-view 'sequence)
+(setq wl-thread-insert-opened nil)
 
 ;; メールを書くときはフル画面にする
 (setq wl-draft-reply-buffer-style 'full)
